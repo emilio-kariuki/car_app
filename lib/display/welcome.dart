@@ -30,11 +30,11 @@ class _WelcomeState extends State<Welcome> {
           ),
           Positioned(
             bottom: 30,
-            right: 20,
+            left: 20,
             child: CircleAvatar(
               backgroundColor: kprimaryColor,
-              child: Icon(Icons.arrow_right_rounded,size:40,color:Colors.white),
-              radius: 30,
+              child: Icon(Icons.arrow_right_rounded,size:50,color:Colors.white),
+              radius: 40,
             )
           ),
           Positioned(
