@@ -36,6 +36,7 @@ class _BuildBottomNavigationBarState extends State<BuildBottomNavigationBar> {
   @override
   Widget build(BuildContext context) {
     return Container(
+      //decoration: ,
       padding: EdgeInsets.symmetric(horizontal: 25, vertical: 18),
       color: kaccentColor,
       height: 65,
