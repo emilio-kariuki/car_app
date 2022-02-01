@@ -27,8 +27,8 @@ class _BuildBottomNavigationBarState extends State<BuildBottomNavigationBar> {
   List<String> buttomNav = [
     'assets/app.png',
     'assets/calendar.png',
-    'assets/icons/pin.png',
-    'assets/icons/user.png',
+    'assets/pin.png',
+    'assets/user.png',
   ];
 
   int selecTedIndex = 0;
