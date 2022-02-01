@@ -1,4 +1,5 @@
 import 'package:car_app/Constants/constants.dart';
+import 'package:car_app/display/welcome.dart';
 import "package:flutter/material.dart";
 
 class Home extends StatefulWidget {
@@ -47,8 +48,12 @@ class _BuildBottomNavigationBarState extends State<BuildBottomNavigationBar> {
           onTap: () {
             setState(() {
               selecTedIndex = index;
-              if (i)
-
+              if (selecTedIndex == 1) {
+                setState(() {
+                  Navigator.of(context)
+                      .push(MaterialPageRoute(builder: (context) => Welcome()));
+                });
+              }
             });
           },
           child: Padding(
