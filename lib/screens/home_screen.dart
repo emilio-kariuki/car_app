@@ -25,8 +25,8 @@ class BuildBottomNavigationBar extends StatefulWidget {
 
 class _BuildBottomNavigationBarState extends State<BuildBottomNavigationBar> {
   List<String> buttomNav = [
-    'assets/icons/app.png',
-    'assets/icons/calendar.png',
+    'assets/app.png',
+    'assets/calendar.png',
     'assets/icons/pin.png',
     'assets/icons/user.png',
   ];
