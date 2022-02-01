@@ -47,7 +47,8 @@ class _BuildBottomNavigationBarState extends State<BuildBottomNavigationBar> {
           onTap: () {
             setState(() {
               selecTedIndex = index;
-              
+              if (i)
+
             });
           },
           child: Padding(
