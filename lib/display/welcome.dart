@@ -1,5 +1,6 @@
 // ignore_for_file: unused_local_variable
 
+import 'package:car_app/Constants/constants.dart';
 import "package:flutter/material.dart";
 
 
@@ -30,6 +31,7 @@ class _WelcomeState extends State<Welcome> {
             bottom: 30,
             right: 20,
             child: CircleAvatar(
+              backgroundColor: kprimaryColor,
               child: Icon(Icons.arrow_right_rounded,size:40,color:Colors.white),
               radius: 30,
             )
