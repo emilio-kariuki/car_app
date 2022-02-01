@@ -18,7 +18,14 @@ class _WelcomeState extends State<Welcome> {
     return Scaffold(
       body: Stack(
         children: [
-          Container()
+          SizedBox(
+            height: mediaQuery.height,
+            width: mediaQuery.width,
+            child: Image.asset(
+              'assets/welcome.jpg',
+              fit: BoxFit.cover,
+            ),
+          ),
         ],
       )
     );
