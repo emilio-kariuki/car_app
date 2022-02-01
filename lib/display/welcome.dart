@@ -38,8 +38,8 @@ class _WelcomeState extends State<Welcome> {
             )
           ),
           Positioned(
-            top: 30,
-            right: 20,
+            top: 50,
+            left: 20,
             child: Text(
               "Car",
               style: GoogleFonts.roboto(fontSize: 30,color:Colors.white,fontWeight: FontWeight.bold)
