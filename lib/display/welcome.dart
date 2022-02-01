@@ -31,10 +31,13 @@ class _WelcomeState extends State<Welcome> {
           Positioned(
             bottom: 30,
             left: 20,
-            child: CircleAvatar(
-              backgroundColor: kprimaryColor,
-              child: Icon(Icons.arrow_right_rounded,size:50,color:Colors.white),
-              radius: 40,
+            child: GestureDetector(
+              onTap: (){},
+              child: CircleAvatar(
+                backgroundColor: kprimaryColor,
+                child: Icon(Icons.arrow_right_rounded,size:50,color:Colors.white),
+                radius: 40,
+              ),
             )
           ),
           Positioned(
@@ -42,7 +45,7 @@ class _WelcomeState extends State<Welcome> {
             left: 20,
             child: Text(
               "Car",
-              style: GoogleFonts.roboto(fontSize: 30,color:Colors.white,fontWeight: FontWeight.bold)
+              style: GoogleFonts.roboto(fontSize: 40,color:Colors.white,fontWeight: FontWeight.bold)
             )
           )
         ],
