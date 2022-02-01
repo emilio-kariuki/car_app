@@ -38,7 +38,7 @@ class _WelcomeState extends State<Welcome> {
             )
           ),
           Positioned(
-            bottom: 30,
+            top: 30,
             right: 20,
             child: Text(
               "Car",
