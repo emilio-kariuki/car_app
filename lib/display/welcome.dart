@@ -27,7 +27,9 @@ class _WelcomeState extends State<Welcome> {
             ),
           ),
           Positioned(
-            
+            child: CircleAvatar(
+              
+            )
           )
         ],
       )
