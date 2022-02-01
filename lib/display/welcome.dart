@@ -26,6 +26,9 @@ class _WelcomeState extends State<Welcome> {
               fit: BoxFit.cover,
             ),
           ),
+          Positioned(
+            
+          )
         ],
       )
     );
