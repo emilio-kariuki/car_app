@@ -12,11 +12,8 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        bottomNavigationBar: BottomNavigationBar(
-      type: BottomNavigationBarType.fixed,
-      backgroundColor: kaccentColor,
-      items: [],
-    ));
+      bottomNavigationBar: BuildBottomNavigationBar(),
+    );
   }
 }
 
