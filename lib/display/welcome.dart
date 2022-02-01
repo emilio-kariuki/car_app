@@ -1,3 +1,5 @@
+// ignore_for_file: unused_local_variable
+
 import "package:flutter/material.dart";
 
 
@@ -9,11 +11,15 @@ class Welcome extends StatefulWidget {
 }
 
 class _WelcomeState extends State<Welcome> {
+  
   @override
   Widget build(BuildContext context) {
+    final mediaQuery = MediaQuery.of(context).size;
     return Scaffold(
       body: Stack(
-        children: [],
+        children: [
+          Container()
+        ],
       )
     );
   }
