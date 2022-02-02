@@ -1,10 +1,22 @@
+import 'package:car_app/Constants/constants.dart';
+import 'package:car_app/building/build_container.dart';
 import "package:flutter/material.dart";
 
 class BuildAppBar extends StatelessWidget {
-  const BuildAppBar({Key? key}) : super(key: key);
+  final String iconUrl;
+  final Function() func;
+  const BuildAppBar({required this.iconUrl, required this.func,Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Column(
+      children: [
+        BuildContainer(
+          color: kaccentColor,
+          child: Image.asset(
+            iconUrl,
+            color: Colors.white
+          ))
+      ],);
   }
 }
