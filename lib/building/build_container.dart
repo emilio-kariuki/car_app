@@ -11,6 +11,7 @@ class BuildContainer extends StatelessWidget {
     return Container(
       width: 45,
       height: 45,
+      padding: EdgeInsets.all(12),
       decoration: BoxDecoration(
         color: color,
         borderRadius: BorderRadius.circular(10),

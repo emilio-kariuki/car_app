@@ -20,7 +20,7 @@ class _HomeState extends State<Home> {
           children: [
             Center(
                 child: BuildAppBar(
-                    iconUrl: "assets/bell.png",
+                    iconUrl: "assets/pin.png",
                     func: () {
                       setState(() {
                         ScaffoldMessenger.of(context).showSnackBar(SnackBar(
