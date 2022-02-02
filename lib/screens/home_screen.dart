@@ -38,7 +38,7 @@ class _BuildBottomNavigationBarState extends State<BuildBottomNavigationBar> {
   Widget build(BuildContext context) {
     return Container(
       //decoration: ,
-      padding: EdgeInsets.symmetric(horizontal: 25, vertical: 18),
+      padding: EdgeInsets.symmetric(horizontal: 25, vertical: 19),
       color: kaccentColor,
       height: 65,
       child: ListView.builder(
