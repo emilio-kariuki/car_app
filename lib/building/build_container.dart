@@ -9,11 +9,11 @@ class BuildContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 45,
-      height: 45,
+      width: 60,
+      height: 60,
       decoration: BoxDecoration(
         color: color,
-        borderRadius: BorderRadius.circular(20),
+        borderRadius: BorderRadius.circular(10),
         border: Border.all(color: kaccentColor, width: 1.0),
       ),
       child: child,

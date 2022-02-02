@@ -11,12 +11,16 @@ class BuildAppBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        BuildContainer(
-          color: kaccentColor,
-          child: Image.asset(
-            iconUrl,
-            color: Colors.white
-          ))
+        GestureDetector(
+          onTap: func,
+          child: BuildContainer(
+            color: kaccentColor,
+            child: Image.asset(
+              iconUrl,
+              color: Colors.white,
+              
+            )),
+        )
       ],);
   }
 }

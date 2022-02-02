@@ -1,4 +1,5 @@
 import 'package:car_app/Constants/constants.dart';
+import 'package:car_app/building/build_appBar.dart';
 import 'package:car_app/building/build_container.dart';
 import 'package:car_app/display/welcome.dart';
 import "package:flutter/material.dart";
@@ -18,15 +19,21 @@ class _HomeState extends State<Home> {
         child: Column(
           children: [
             Center(
-              child: BuildContainer(
-              color: kprimaryColor,
-              child: Image.asset("assets/pin.png")),
-            ),
+                child: BuildAppBar(
+                    iconUrl: "assets/pin.png",
+                    func: () {
+                      setState(() {
+                        ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                          content: Text("Location Pressed"),
+                          backgroundColor: Colors.blue[900],
+                          duration: Duration(milliseconds: 700),
+                        ));
+                      });
+                    })),
           ],
         ),
       ),
       bottomNavigationBar: BuildBottomNavigationBar(),
-
     );
   }
 }
