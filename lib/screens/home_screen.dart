@@ -1,4 +1,5 @@
 import 'package:car_app/Constants/constants.dart';
+import 'package:car_app/building/build_container.dart';
 import 'package:car_app/display/welcome.dart';
 import "package:flutter/material.dart";
 
@@ -13,7 +14,19 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      body: SafeArea(
+        child: Column(
+          children: [
+            Center(
+              child: BuildContainer(
+              color: kprimaryColor,
+              child: Image.asset("assets/pin.png")),
+            ),
+          ],
+        ),
+      ),
       bottomNavigationBar: BuildBottomNavigationBar(),
+
     );
   }
 }
