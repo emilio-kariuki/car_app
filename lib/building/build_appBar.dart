@@ -15,10 +15,12 @@ class BuildAppBar extends StatelessWidget {
           onTap: func,
           child: BuildContainer(
             color: kaccentColor,
-            child: Image.asset(
-              iconUrl,
-              color: Colors.white,
-              
+            child: Center(
+              child: Image.asset(
+                iconUrl,
+                color: Colors.white,
+                
+              ),
             )),
         )
       ],);
